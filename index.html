@@ -1,22 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="A new web page">
-    <meta name="robots" content="index, follow">
-    <link rel="icon" href="favicon.ico">
-    <title>Document</title>
-    <style>
-        /* Minimal CSS Reset */
-        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: system-ui, sans-serif; background: #fafbfc; color: #222; min-height: 100vh; line-height: 1.6; }
-    </style>
+  <meta charset="UTF-8">
+  <title>Cookie World</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    halo
-        <!-- Start building your page here -->
 
+  <div id="game">
+    
+    <div id="cookie-area">
+      <div id="cookie">🍪</div>
+      <p>Cookies: <span id="cookies">0</span></p>
+    </div>
+
+    <div id="upgrades">
+      <h2>Upgrades</h2>
+      <button onclick="buyUpgrade()">+1 por click (10)</button>
+    </div>
+
+    <div id="buildings">
+      <h2>Construções</h2>
+      <button onclick="buyCursor()">Cursor (50)</button>
+    </div>
+
+  </div>
+
+  <div id="menu">
+    <button onclick="saveGame()">Salvar</button>
+    <button onclick="loadGame()">Carregar</button>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
